@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a72892e0d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <style></style>
+  <body>
+    <div class="cont">
+      <button onclick="toggle()" style="width: 50px; padding: 5px;" id="toggleBtn">
+        <i class="fas fa-volume-mute"></i></i>
+      </button>
+      <div class="main" id="main">
+        <div class="image">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png"
+            alt=""
+            width="400px"
+            height="150px"
+          />
+        </div>
+        <input
+          placeholder="Enter Your Character.."
+          id="name"
+          oninput="getDetails()"
+          class="slideDown"
+        />
+
+        <div id="container" class="hatch"></div>
+      </div>
+      <div id="card" class="bounce"></div>
+    </div>
+    <audio
+
+      id="audio"
+      src="45_avengers_movie_theme_music_mp3_ringtone_ringtone_mp3.mp3"
+      autoplay
+      loop
+    ></audio>
+  </body>
+</html>
+
+<script src="index.js"></script>
